@@ -13,3 +13,5 @@ Kitchen inventory after service: Cutlery(knives=100, forks=100)
 $ python main.py 10000 - problem!! - inventory doesn't match
 Kitchen inventory before service: Cutlery(knives=100, forks=100)
 Kitchen inventory after service: Cutlery(knives=88, forks=100)
+
+It will be resolved if you add lock in cutlery class.
