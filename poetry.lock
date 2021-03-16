@@ -1,0 +1,17 @@
+[[package]]
+category = "main"
+description = "Simple decorator to set attributes of target function or class in a DRY way."
+name = "attr"
+optional = false
+python-versions = "*"
+version = "0.3.1"
+
+[metadata]
+content-hash = "1a0ffd3615a366187316498fc4c84b7347fcc7c3d87aa6745467fdc491ee7d24"
+python-versions = "^3.8"
+
+[metadata.files]
+attr = [
+    {file = "attr-0.3.1-py2-none-any.whl", hash = "sha256:0b1aaddb85bd9e9c4bd75092f4440d6616ff40b0df0437f00771871670f7c9fd"},
+    {file = "attr-0.3.1.tar.gz", hash = "sha256:9091548058d17f132596e61fa7518e504f76b9a4c61ca7d86e1f96dbf7d4775d"},
+]

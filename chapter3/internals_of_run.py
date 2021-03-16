@@ -1,0 +1,26 @@
+import asyncio
+import time
+"""
+When we call run() this is what happens inside. The code which is commented below should be uncommented so that all pending tasks can finish.
+"""
+async def main1():
+    print(f"{time.ctime()} Hello!")
+    await asyncio.sleep(1.0)
+    print(f"{time.ctime()} Goodbye!")
+
+async def main2():
+    print(f"{time.ctime()} Hello!")
+    await asyncio.sleep(10.0)
+    print(f"{time.ctime()} Goodbye!")
+
+loop = asyncio.get_event_loop()
+task1 = loop.create_task(main1())
+task2 = loop.create_task(main2())
+
+loop.run_until_complete(task1)
+"""pending = asyncio.all_tasks(loop=loop)
+for task in pending:
+    task.cancel()
+group = asyncio.gather(*pending, return_exceptions=True)
+loop.run_until_complete(group)
+loop.close()"""
