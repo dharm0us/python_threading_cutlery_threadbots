@@ -15,3 +15,8 @@ Kitchen inventory before service: Cutlery(knives=100, forks=100)
 Kitchen inventory after service: Cutlery(knives=88, forks=100)
 
 It will be resolved if you add lock in cutlery class.
+Or you could use async version:
+
+$ python kitchen_async.py 10000
+Kitchen inventory before service: Cutlery(knives=100, forks=100)
+Kitchen inventory after service: Cutlery(knives=100, forks=100)
