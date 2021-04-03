@@ -12,7 +12,7 @@ class Cutlery:
         to.change(knives, forks)
 
     def change(self, knives, forks):
-         with self.lock:
+         with self.lock: #without this lock the count will be wrong
             self.knives += knives
             self.forks += forks
 
