@@ -1,4 +1,7 @@
 python mqserver.py &
+OR
+python mq_server_plus.py &
+
 python mq_client_listen.py --listen /queue/blah &
 python mq_client_listen.py --listen /queue/blah &
 python mq_client_sender.py --channel /queue/blah
