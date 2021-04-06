@@ -15,3 +15,6 @@ Via PULL: 3
 Via SUB: 3
 Via PULL: 4
 Via SUB: 4
+
+-----------------
+Ideally poller_aio.py should work the same way but I couldn't make it work.
