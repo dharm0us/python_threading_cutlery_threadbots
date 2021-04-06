@@ -20,6 +20,9 @@ async def client(reader: StreamReader, writer: StreamWriter):
       send_client(writer, CLIENT_TO_MSGS_MAP[writer]))
   print(f'Remote {peername} subscribed to {subscribe_chan}')
   try:
+    # note the use of walrus operator(:=) here, introduced in py3.8
+    # a = b is a statement whereas a := b is an expression which evaluates to b
+    # and hence can be used by while to test its value.
     while channel_name := await read_msg(reader):
       data = await read_msg(reader)
       if channel_name not in CHANNEL_TO_MSGS_MAP:
